@@ -767,3 +767,43 @@ Processing by CoffeeShopsController#index as JSON
 Completed 200 OK in 25ms (Views: 19.5ms | ActiveRecord: 1.5ms)
 
 
+Started GET "/users" for 127.0.0.1 at 2017-05-29 13:05:21 -0400
+  
+SyntaxError (/Users/ajfriedl/Development/projects/cafe-roulette/api/app/controllers/users_controller.rb:8: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/users_controller.rb:8: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /Users/ajfriedl/.gem/ruby/2.3.1/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/ajfriedl/.gem/ruby/2.3.1/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/ajfriedl/.gem/ruby/2.3.1/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.3ms)
+  Rendering /Users/ajfriedl/.gem/ruby/2.3.1/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/ajfriedl/.gem/ruby/2.3.1/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (13.0ms)
+  Rendering /Users/ajfriedl/.gem/ruby/2.3.1/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/ajfriedl/.gem/ruby/2.3.1/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /Users/ajfriedl/.gem/ruby/2.3.1/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (118.4ms)
+Started GET "/users.json" for 127.0.0.1 at 2017-05-29 13:05:27 -0400
+  
+SyntaxError (/Users/ajfriedl/Development/projects/cafe-roulette/api/app/controllers/users_controller.rb:8: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/users_controller.rb:8: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /Users/ajfriedl/.gem/ruby/2.3.1/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/ajfriedl/.gem/ruby/2.3.1/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/ajfriedl/.gem/ruby/2.3.1/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.4ms)
+  Rendering /Users/ajfriedl/.gem/ruby/2.3.1/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/ajfriedl/.gem/ruby/2.3.1/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendering /Users/ajfriedl/.gem/ruby/2.3.1/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/ajfriedl/.gem/ruby/2.3.1/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /Users/ajfriedl/.gem/ruby/2.3.1/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (113.5ms)
+Started GET "/users.json" for 127.0.0.1 at 2017-05-29 13:06:12 -0400
+Processing by UsersController#index as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.31ms)
+Completed 200 OK in 19ms (Views: 16.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users.json" for 127.0.0.1 at 2017-05-29 13:08:29 -0400
+Processing by UsersController#index as JSON
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.31ms)
+Completed 200 OK in 21ms (Views: 18.1ms | ActiveRecord: 1.3ms)
+
+
