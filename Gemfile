@@ -31,6 +31,14 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+# Use Devise for authentication
+gem 'devise'
+# Use rb-readline for console
+gem 'rb-readline'
+# Use A_M_S for serialization
+gem 'active_model_serializers'
+# User Dotenv to store environment variables
+gem 'dotenv-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
