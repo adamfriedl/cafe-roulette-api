@@ -1,7 +1,9 @@
 class CoffeeShopsController < ApplicationController
 
   def index
-    @coffee_shops = CoffeeShop.all
+    respond_to do |f|
+      f.json {render json: CoffeeShop.all}
+    end
   end
 
   def new
@@ -25,4 +27,5 @@ class CoffeeShopsController < ApplicationController
     :price_range
     )
   end
+
 end
