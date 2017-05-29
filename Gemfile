@@ -39,6 +39,8 @@ gem 'rb-readline'
 gem 'active_model_serializers'
 # User Dotenv to store environment variables
 gem 'dotenv-rails'
+# Allow CORS
+gem 'rack-cors'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
