@@ -1,9 +1,7 @@
 class CoffeeShopsController < ApplicationController
 
   def index
-    respond_to do |f|
-      f.json {render json: CoffeeShop.all}
-    end
+    render json: CoffeeShop.all
   end
 
   def new
@@ -12,6 +10,10 @@ class CoffeeShopsController < ApplicationController
   def create
     @coffee_shop = CoffeeShop.new(coffee_shop_params)
     @coffee_shop.save
+  end
+
+  def sample
+    render json: CoffeeShop.all.sample
   end
 
   private
