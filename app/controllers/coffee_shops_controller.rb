@@ -8,13 +8,18 @@ class CoffeeShopsController < ApplicationController
   end
 
   def create
+    # @coffee_shop = CoffeeShop.new(coffee_shop_params)
+    # @coffee_shop.save
+
     @coffee_shop = CoffeeShop.new(coffee_shop_params)
-    @coffee_shop.save
+    if @coffee_shop.save
+      redirect_to @coffee_shop, notice: 'Your recipe was sucessfully created.'
+    else
+      render 'new', notice: 'There was a problem creating your coffee shop.'
+    end
   end
 
-  def sample
-    render json: CoffeeShop.all.sample
-  end
+
 
   private
 

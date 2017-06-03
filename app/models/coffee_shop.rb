@@ -1,6 +1,8 @@
 class CoffeeShop < ApplicationRecord
-  belongs_to :user
+  # belongs_to :user
 
-  validates :name, :description, :website, :address, :food, :price_range, presence: true
+  validates :name, presence: true
+
+  # :description, :website, :address, :food, :price_range,
 
 end
