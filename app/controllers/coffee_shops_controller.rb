@@ -1,7 +1,7 @@
 class CoffeeShopsController < ApplicationController
 
   def index
-    render json: CoffeeShop.last
+    render json: CoffeeShop.all
   end
 
   def new

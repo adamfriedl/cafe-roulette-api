@@ -9934,3 +9934,50 @@ Processing by CoffeeShopsController#index as HTML
 Completed 200 OK in 49ms (Views: 5.7ms | ActiveRecord: 2.6ms)
 
 
+Started GET "/coffee_shops" for 127.0.0.1 at 2017-06-06 18:17:32 -0400
+Processing by CoffeeShopsController#index as */*
+  [1m[36mCoffeeShop Load (0.8ms)[0m  [1m[34mSELECT  "coffee_shops".* FROM "coffee_shops" ORDER BY "coffee_shops"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+[active_model_serializers] Rendered CoffeeShopSerializer with ActiveModelSerializers::Adapter::Attributes (1.11ms)
+Completed 200 OK in 8ms (Views: 2.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/coffee_shops" for 127.0.0.1 at 2017-06-06 18:17:49 -0400
+Processing by CoffeeShopsController#index as */*
+  [1m[36mCoffeeShop Load (0.3ms)[0m  [1m[34mSELECT  "coffee_shops".* FROM "coffee_shops" ORDER BY "coffee_shops"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+[active_model_serializers] Rendered CoffeeShopSerializer with ActiveModelSerializers::Adapter::Attributes (0.49ms)
+Completed 200 OK in 32ms (Views: 29.7ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mCoffeeShop Load (2.3ms)[0m  [1m[34mSELECT "coffee_shops".* FROM "coffee_shops"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "coffee_shops" ("name", "description", "website", "address", "price_range", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Stumptown"], ["description", "'Girls' coffee shop in Greenpoint."], ["website", "cafegrumpy.com"], ["address", "10 Diamond Street, Brooklyn, NY 11222"], ["price_range", "middle-of-the-road"], ["created_at", "2017-06-06 22:18:58.042370"], ["updated_at", "2017-06-06 22:18:58.042370"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/coffee_shops" for 127.0.0.1 at 2017-06-06 18:19:02 -0400
+Processing by CoffeeShopsController#index as */*
+  [1m[36mCoffeeShop Load (0.4ms)[0m  [1m[34mSELECT  "coffee_shops".* FROM "coffee_shops" ORDER BY "coffee_shops"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+[active_model_serializers] Rendered CoffeeShopSerializer with ActiveModelSerializers::Adapter::Attributes (0.52ms)
+Completed 200 OK in 4ms (Views: 1.7ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mCoffeeShop Load (0.2ms)[0m  [1m[34mSELECT "coffee_shops".* FROM "coffee_shops"[0m
+Started GET "/coffee_shops" for 127.0.0.1 at 2017-06-06 18:20:02 -0400
+Processing by CoffeeShopsController#index as HTML
+  [1m[36mCoffeeShop Load (0.2ms)[0m  [1m[34mSELECT  "coffee_shops".* FROM "coffee_shops" ORDER BY "coffee_shops"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+[active_model_serializers] Rendered CoffeeShopSerializer with ActiveModelSerializers::Adapter::Attributes (0.4ms)
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/coffee_shops" for 127.0.0.1 at 2017-06-06 18:20:27 -0400
+Processing by CoffeeShopsController#index as HTML
+  [1m[36mCoffeeShop Load (0.4ms)[0m  [1m[34mSELECT "coffee_shops".* FROM "coffee_shops"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.76ms)
+Completed 200 OK in 20ms (Views: 15.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/coffee_shops" for 127.0.0.1 at 2017-06-06 18:20:33 -0400
+Processing by CoffeeShopsController#index as */*
+  [1m[36mCoffeeShop Load (0.3ms)[0m  [1m[34mSELECT "coffee_shops".* FROM "coffee_shops"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.95ms)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+
+
