@@ -13,7 +13,7 @@ class CoffeeShopsController < ApplicationController
 
     @coffee_shop = CoffeeShop.create(coffee_shop_params)
     # if @coffee_shop.save
-    #   # render json: CoffeeShop.last
+      render json: @coffee_shop
     # end
   end
 
