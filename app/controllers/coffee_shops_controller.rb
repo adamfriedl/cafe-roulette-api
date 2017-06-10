@@ -11,10 +11,10 @@ class CoffeeShopsController < ApplicationController
     # @coffee_shop = CoffeeShop.new(coffee_shop_params)
     # @coffee_shop.save
 
-    @coffee_shop = CoffeeShop.create(coffee_shop_params)
-    # if @coffee_shop.save
-      render json: @coffee_shop
-    # end
+    @coffee_shop = CoffeeShop.new(coffee_shop_params)
+    if @coffee_shop.save
+      render json: @coffee_shop, status: 201
+    end
   end
 
 
