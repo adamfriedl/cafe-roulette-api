@@ -8,13 +8,12 @@ class CoffeeShopsController < ApplicationController
   end
 
   def create
-    # @coffee_shop = CoffeeShop.new(coffee_shop_params)
-    # @coffee_shop.save
-
     @coffee_shop = CoffeeShop.new(coffee_shop_params)
     if @coffee_shop.save
       render json: @coffee_shop, status: 201
     end
+
+  def show
   end
 
 
