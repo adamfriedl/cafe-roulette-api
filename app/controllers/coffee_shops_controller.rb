@@ -12,8 +12,11 @@ class CoffeeShopsController < ApplicationController
     if @coffee_shop.save
       render json: @coffee_shop, status: 201
     end
+  end
 
   def show
+    @coffee_shop = CoffeeShop.find(params[:id])
+    render json: @coffee_shop
   end
 
 
