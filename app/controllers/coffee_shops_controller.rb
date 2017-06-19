@@ -19,6 +19,12 @@ class CoffeeShopsController < ApplicationController
     render json: @coffee_shop
   end
 
+  def update
+    @coffee_shop = CoffeeShop.find(params[:id])
+    @coffee_shop.update(coffee_shop_params)
+    render json: @coffee_shop
+  end
+
 
 
   private
@@ -30,7 +36,8 @@ class CoffeeShopsController < ApplicationController
     :website,
     :address,
     :food,
-    :price_range
+    :price_range,
+    :votes
     )
   end
 
