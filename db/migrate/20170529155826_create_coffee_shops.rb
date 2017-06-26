@@ -6,8 +6,9 @@ class CreateCoffeeShops < ActiveRecord::Migration[5.0]
       t.string :description
       t.string :website
       t.string :address
-      t.string :food
+      t.boolean :food
       t.string :price_range
+      t.integer :votes, default: 0
 
       t.timestamps
     end
