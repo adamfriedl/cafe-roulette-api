@@ -23464,3 +23464,11 @@ Processing by CoffeeShopsController#index as */*
 Completed 200 OK in 14ms (Views: 3.0ms | ActiveRecord: 10.4ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-06-25 23:02:11 -0400
+Processing by Rails::WelcomeController#index as */*
+  Parameters: {"internal"=>true, "welcome"=>{}}
+  Rendering /Users/ajfriedl/.gem/ruby/2.3.1/gems/railties-5.0.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ajfriedl/.gem/ruby/2.3.1/gems/railties-5.0.3/lib/rails/templates/rails/welcome/index.html.erb (5.7ms)
+Completed 200 OK in 65ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
