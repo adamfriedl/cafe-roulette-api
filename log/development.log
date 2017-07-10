@@ -28549,3 +28549,21 @@ Processing by CoffeeShopsController#index as */*
 Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.3ms)
 
 
+Started POST "/coffee_shops" for 127.0.0.1 at 2017-07-09 23:04:47 -0400
+Processing by CoffeeShopsController#create as */*
+  Parameters: {"name"=>"Marlow & Sons ", "description"=>"South Williamsburg Hang", "website"=>"http://marlowsons.com", "address"=>"381 Berry Street, Brooklyn, NY ", "food"=>true, "price_range"=>"$$", "votes"=>0, "coffee_shop"=>{"name"=>"Marlow & Sons ", "description"=>"South Williamsburg Hang", "website"=>"http://marlowsons.com", "address"=>"381 Berry Street, Brooklyn, NY ", "food"=>true, "price_range"=>"$$", "votes"=>0}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "coffee_shops" ("name", "description", "website", "address", "food", "price_range", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Marlow & Sons "], ["description", "South Williamsburg Hang"], ["website", "http://marlowsons.com"], ["address", "381 Berry Street, Brooklyn, NY "], ["food", "t"], ["price_range", "$$"], ["created_at", "2017-07-10 03:04:47.311064"], ["updated_at", "2017-07-10 03:04:47.311064"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered CoffeeShopSerializer with ActiveModelSerializers::Adapter::Attributes (0.3ms)
+Completed 201 Created in 6ms (Views: 0.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/coffee_shops" for 127.0.0.1 at 2017-07-10 04:58:57 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (24.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CoffeeShopsController#index as */*
+  [1m[36mCoffeeShop Load (25.2ms)[0m  [1m[34mSELECT "coffee_shops".* FROM "coffee_shops"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.55ms)
+Completed 200 OK in 96ms (Views: 38.6ms | ActiveRecord: 37.5ms)
+
+
