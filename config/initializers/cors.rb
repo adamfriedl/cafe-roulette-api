@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'caferoulette.herokuapp.com', 'localhost:3000'
+    origins 'caferoulette.herokuapp.com', 'localhost:3000', 'adamfriedl.com/caferoulette'
 
     resource '*',
       headers: :any,

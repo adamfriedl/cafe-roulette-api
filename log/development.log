@@ -29123,3 +29123,4 @@ Processing by CoffeeShopsController#index as */*
 Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.5ms)
 
 
+  [1m[36mCoffeeShop Load (0.7ms)[0m  [1m[34mSELECT "coffee_shops".* FROM "coffee_shops"[0m
