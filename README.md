@@ -1,24 +1,21 @@
-# README
+# Cafe Roulette API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails API providing the backend for [Cafe Roulette](https://github.com/adamfriedl/caferoulette). 
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+Fork, clone, run `bundle`. 
 
-* System dependencies
+## Usage
 
-* Configuration
+See *config/routes* for API endpoints. 
 
-* Database creation
+## Contributing
 
-* Database initialization
+Suggestions and contributions always wlecome!
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request :D
